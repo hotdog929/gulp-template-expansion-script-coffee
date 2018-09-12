@@ -1,6 +1,6 @@
 {
     "name" : "gulp-template-expansion-script-coffee",
-    "version" : "0.0.1",
+    "version" : "1.0.0",
     "devDependencies" : {
         "gulp" : "^3.9.1",
         "gulp-param" : "^1.0.3",
@@ -10,6 +10,7 @@
     "dependencies" : {
         "event-stream" : "^3.3.2",
         "browserify" : "^13.0.0",
+        "dep-case-verify" : "^2.1.0",
         "coffeeify" : "^2.0.1"
     },
     "scripts" : {

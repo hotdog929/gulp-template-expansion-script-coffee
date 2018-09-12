@@ -10,6 +10,7 @@ function createScriptEnvContent(version, cdn){
 function buildScript(){
     return es.map(function(file, cb){
         var bundle = browserify({extensions : ['.coffee']});
+        bundle.plugin(require('dep-case-verify'));
         bundle.transform(coffeeify, {bare : false, header : true});
         bundle.add(file.path);
         bundle.bundle(function(error, result){
