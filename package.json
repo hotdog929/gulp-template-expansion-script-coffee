@@ -1,26 +1,27 @@
 {
-    "name" : "gulp-template-expansion-script-coffee",
-    "version" : "1.0.0",
-    "devDependencies" : {
-        "gulp" : "^3.9.1",
-        "gulp-param" : "^1.0.3",
-        "gulp-template-servlet-expansion" : "^0.0.4",
-        "mocha" : "^2.4.5"
+    "name": "gulp-template-expansion-script-coffee",
+    "version": "1.0.1",
+    "devDependencies": {
+        "gulp": "^3.9.1",
+        "gulp-param": "^1.0.3",
+        "gulp-template-servlet-expansion": "^0.0.4",
+        "mocha": "^2.4.5"
     },
-    "dependencies" : {
-        "event-stream" : "^3.3.2",
-        "browserify" : "^13.0.0",
-        "dep-case-verify" : "^2.1.0",
-        "coffeeify" : "^2.0.1"
+    "dependencies": {
+        "browserify": "^13.0.0",
+        "coffeeify": "^2.0.1",
+        "browserify-casesensitiverequire": "^1.0.1",
+        "event-stream": "^3.3.2",
+        "npm": "^6.4.1"
     },
-    "scripts" : {
-        "test" : "node_modules/mocha/bin/mocha"
+    "scripts": {
+        "test": "node_modules/mocha/bin/mocha"
     },
-    "main" : "index.js",
-    "license" : "MIT",
-    "author" : "hotdog929 <hotdog929@gmail.com>",
-    "repository" : {
-        "type" : "git",
-        "url" : "https://github.com/hotdog929/gulp-template-expansion-script-coffee.git"
+    "main": "index.js",
+    "license": "MIT",
+    "author": "hotdog929 <hotdog929@gmail.com>",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hotdog929/gulp-template-expansion-script-coffee.git"
     }
 }

@@ -2,6 +2,7 @@ var es = require('event-stream');
 
 var browserify = require('browserify');
 var coffeeify = require('coffeeify');
+var casesensitiverequire = require('browserify-casesensitiverequire');
 
 function createScriptEnvContent(version, cdn){
     return 'module.exports = {version:"' + version + '",cdn:"' + cdn + '"};';
@@ -10,7 +11,7 @@ function createScriptEnvContent(version, cdn){
 function buildScript(){
     return es.map(function(file, cb){
         var bundle = browserify({extensions : ['.coffee']});
-        bundle.plugin(require('dep-case-verify'));
+        bundle.transform(casesensitiverequire);
         bundle.transform(coffeeify, {bare : false, header : true});
         bundle.add(file.path);
         bundle.bundle(function(error, result){
